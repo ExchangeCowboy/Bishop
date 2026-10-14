@@ -5,6 +5,12 @@
 
 Bishop is my lightweight and custom Agent. Written largely by Codex in Node.js and Typescript, Bishop is intended to be fast. Guiding principles for Bishop are speed, customization, and minimal context usage.
 
+Currently Bishop requires 
+     - The ChatGPT app / Codex to be installed on your PC.
+     - Windows OS
+     - Nodejs
+Check installation.md for detailed steps.
+
 **Why do you call it Bishop?**
 
 I call him Bishop because on the board, the Bishop approaches things from angles, get it? ^_^
