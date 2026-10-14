@@ -4,6 +4,14 @@ Updated October 14, 2026. Tim Williams built this.
 
 ## Current setup
 
+The requested 0.12 alpha release uses package version 0.12.0-alpha and tag
+v0.12.0-alpha. .github/workflows/release.yml packages committed files only, checks
+the installer and clean defaults, produces a SHA-256 checksum, and publishes a
+prerelease using the repository-scoped Actions token. It runs when its workflow
+file is pushed to main or when manually dispatched, leaving existing releases
+untouched. Publication must be verified through the resulting release/run status.
+Release notes are in [RELEASE_NOTES.md](../../RELEASE_NOTES.md).
+
 GitHub upload preparation targets the owner's existing public repository,
 https://github.com/ExchangeCowboy/Bishop. The local codex/publish-bishop branch
 starts from its existing main history. The owner's README, installation guide,

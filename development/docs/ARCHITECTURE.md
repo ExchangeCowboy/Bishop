@@ -1,6 +1,6 @@
 # Bishop Agent architecture
 
-This describes version 0.1.0 as inspected on October 13, 2026. Source code is the
+This describes version 0.12.0-alpha as prepared on October 14, 2026. Source code is the
 authority when behavior changes.
 
 ## Per-run usage accounting

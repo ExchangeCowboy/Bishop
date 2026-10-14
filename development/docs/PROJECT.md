@@ -54,7 +54,7 @@ silently expand into developing a script, rollback function, or unrelated tests.
 
 ## First slice
 
-Version 0.1.0 delivers chat, a host command runner, DuckDuckGo web search, direct web-page reading, compact persistent memory, a skill library, transcript
+Version 0.12.0-alpha delivers chat, a host command runner, DuckDuckGo web search, direct web-page reading, compact persistent memory, a skill library, transcript
 storage, automatic working-context compaction, an offline demo, and meaningful tests of execution and prerequisites.
 Subscription access is mediated by Codex, not a new Bishop OAuth client.
 

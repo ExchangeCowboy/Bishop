@@ -1,5 +1,20 @@
 # Verification — October 14, 2026
 
+## 0.12 alpha preparation
+
+Version metadata and CLI help now report 0.12.0-alpha. All 129 tests, npm run
+check, and offline demo passed after this change. Lockfile/root version consistency
+and the release ZIP's installer files and clean first-run defaults are checked
+before publication. The release job packages the committed tree, not the working
+directory, and generates a SHA-256 checksum. It requests only repository contents
+write permission and publishes an alpha prerelease using the Actions token.
+No owner credentials or personal runtime state are bundled.
+
+Clean-machine installation remains untested. Publication success must be verified
+from the GitHub Actions run and actual release/assets, not inferred from a push.
+Backup and restore:
+development/work/self-development-backups/20261014-123506-796/MANIFEST.md.
+
 ## Included Windows installer
 
 All 129 tests and npm run check passed. Installer fixtures use temporary folders

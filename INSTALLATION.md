@@ -18,7 +18,8 @@ administrator privileges.
 
 ## 2. Download Bishop
 
-On this GitHub repository, choose **Code → Download ZIP**. Extract the entire ZIP
+Download the Windows ZIP from [Bishop releases](https://github.com/ExchangeCowboy/Bishop/releases).
+You can also choose **Code → Download ZIP** on the repository. Extract the entire ZIP
 into a writable folder you intend to keep. Open the extracted folder containing
 `install.cmd`, `package.json`, `app`, and `config`.
 

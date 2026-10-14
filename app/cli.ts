@@ -31,7 +31,7 @@ if (positionals.length > 1 || (positionals.length === 1 && positionals[0] !== "c
   console.error(`Unknown command: ${positionals.join(" ")}. Use bishop chat or bishop --help.`);
   process.exitCode = 1;
 } else if (values.help) {
-  console.log(`Bishop Agent 0.1.0\n
+  console.log(`Bishop Agent 0.12.0-alpha\n
 bishop chat [--prompt "message"] [--session name] [--model model-id]
             [--cwd directory] [--require-command-skill]
 bishop chat --demo
