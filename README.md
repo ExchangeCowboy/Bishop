@@ -1,6 +1,9 @@
 # Bishop
 <img width="1373" height="389" alt="image" src="https://github.com/user-attachments/assets/13fdc228-e608-4ff2-a859-be206cd624c5" />
 
+##Join the Discord## 
+https://discord.gg/B2mkrruSZ8
+
 **What is Bishop?**
 
 Bishop is my lightweight and custom Agent. Written largely by Codex in Node.js and Typescript, Bishop is intended to be fast. Guiding principles for Bishop are speed, customization, and minimal context usage.
