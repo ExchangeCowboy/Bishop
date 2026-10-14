@@ -1,0 +1,9 @@
+node_modules/
+memory/history/
+memory/*.sqlite
+memory/*.sqlite-*
+skills/.revisions/
+development/work/
+.env
+.env.*
+*.log

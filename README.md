@@ -9,7 +9,7 @@ Currently Bishop requires
      - The ChatGPT app / Codex to be installed on your PC.
      - Windows OS
      - Nodejs
-Check installation.md for detailed steps.
+Check [INSTALLATION.md](INSTALLATION.md) for detailed steps.
 
 **Why do you call it Bishop?**
 
@@ -26,3 +26,9 @@ Bishop also has extra work done on its personal memory management. It uses SQL l
 **Why not Bishop?**
 
 Bishop is not designed for someone who doesn't have a good understanding of AI, agents, context windows, and system operations. Yes, he will work out of the box, but there are zero guardrails built around him. This is by design as bishop is built for speed. It is strongly recommended that before you deploy him, your process should be thoroughly tested and rock-solid. You are expected to understand what guardrails are, and how to implement and test them. This does not mean you need to be a developer. An experienced systems engineer (OS, Infrastructure, etc) should be able to work with Bishop to build the solution required.
+
+## Installation and technical reference
+
+Download the repository ZIP, extract it, and double-click `install.cmd`.
+See [installation instructions](INSTALLATION.md) for prerequisites and first launch,
+or the [technical reference](development/docs/REFERENCE.md) for configuration, tools, and development.

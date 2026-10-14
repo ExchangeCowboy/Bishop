@@ -1,0 +1,65 @@
+# BISHOP AGENT SETTINGS
+# Edit this file, save it, and restart Bishop to apply changes.
+# Lines starting with # are comments; they explain the settings.
+
+[tools]
+# true = enabled, false = disabled. Tools are enabled unless you disable them.
+run_command = true  # Run terminal commands on this computer.
+apply_patch = true  # Apply focused, exact-context file edits without shell quoting.
+load_skill = true   # Read a saved skill's full instructions.
+save_skill = true   # Create or update reusable skills.
+update_soul = true  # Refine soul.md through bishop-core-profiler, under 2,000 characters.
+update_memory = true # Keep compact lasting facts in memory.md, under 4,000 characters.
+search_history = true # Search locally saved Bishop conversations on demand.
+search_memories = true # Search SQLite memories before raw conversations.
+memory_indexer = true # Save grounded memories and track processed chat logs; offer review at startup.
+complete_onboarding = true # Finish onboarding by setting first_run = false.
+web_search = true   # Search DuckDuckGo without an API key.
+web_read = true     # Read public web pages directly; no service or API key.
+
+[provider]
+# Requires the installed Codex app or CLI, signed in with ChatGPT.
+# Leave model unset to use the Codex runtime's default.
+# model = "your-model-id"
+# Connection and authentication settings will go here when implemented.
+
+[agent]
+# Normal model decisions per turn, or extraction sections per /memory run (default 100).
+# Chat turns get one extra reply-only decision at the limit; /memory reports locally.
+max_decisions = 100
+
+[memory]
+# Group up to 5 original log sections per model call, with 16,000 source characters total.
+# Large sections run alone. Smaller batches can be selected with 1 through 5.
+batch_sections = 5
+# Exclude development session labels (exact label or label followed by a hyphen).
+# Set [] to include these again. No transcript is deleted.
+excluded_session_prefixes = ["demo", "smoke", "layout-live-smoke", "restructure-smoke", "memory-startup-smoke"]
+# Recover only AFTER a retryable 429; healthy calls have no added delay.
+# Total retries per /memory run, 0–3. Stop cleanly with saved progress if exhausted.
+rate_limit_retries = 2
+retry_delay_seconds = 15 # Initial wait, 5–60 seconds; increases with each retry.
+
+[context]
+# Compact older exchanges before Bishop's 500,000-character model-input guard.
+# Includes instructions, tools, and harness overhead; allowed range 16000–450000.
+# This is a harness budget, not a verified provider context window.
+compact_at_characters = 400000
+
+[search]
+provider = "duckduckgo" # HTML search; no account or API key required.
+result_limit = 5       # Maximum results per search, from 1 to 10.
+timeout_ms = 15000     # Request timeout in milliseconds, from 1 to 60000.
+# DuckDuckGo can block automated requests; failures are reported by the tool.
+
+[web_read]
+timeout_ms = 15000     # Total fetch timeout, from 1 to 60000 ms.
+max_bytes = 2000000    # Download cap (decoded body bytes), from 1 to 5000000.
+max_characters = 16000 # Text per read in UTF-16 units, from 1 to 50000.
+link_limit = 30        # Maximum distinct content links, from 1 to 100.
+# Pages needing scripts, login, or bot challenges may require a future browser tool.
+
+[onboarding]
+# true = begin personal onboarding at startup; completion changes this to false.
+# Set true again to revisit onboarding. Offline --demo leaves it untouched.
+first_run = true

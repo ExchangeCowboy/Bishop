@@ -1,0 +1,27 @@
+{
+  "name": "bishop-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small, inspectable agent harness with explicit tools and on-demand skills.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node app/cli.ts",
+    "demo": "node app/cli.ts --demo",
+    "test": "node --test development/tests/core.test.ts",
+    "check": "tsc --project development/tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "cheerio": "^1.2.0",
+    "jsdom": "^29.1.1",
+    "smol-toml": "^1.9.1"
+  }
+}
