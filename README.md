@@ -1,7 +1,7 @@
 # Bishop
 <img width="1373" height="389" alt="image" src="https://github.com/user-attachments/assets/13fdc228-e608-4ff2-a859-be206cd624c5" />
 
-##Join the Discord## 
+## Join the Discord ## 
 https://discord.gg/B2mkrruSZ8
 
 **What is Bishop?**
