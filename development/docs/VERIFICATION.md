@@ -2,6 +2,16 @@
 
 ## 0.12 alpha preparation
 
+Publication verified: GitHub prerelease v0.12.0-alpha targets commit
+ca9f5f05a32add9aac1c526c62c7ccdb815bafe2. [Publishing run](https://github.com/ExchangeCowboy/Bishop/actions/runs/38608562842)
+completed successfully. Both ZIP/checksum assets report uploaded and download
+successfully. ZIP SHA-256 is
+37e2949dc77a9f7da0b36ce48be087fb324532c35f5d69144be3b0e0c2ada1b1.
+Every one of its 80 files matches the tagged Git blob. The same workflow validator
+confirmed installer presence, absent private state and clean first-run defaults.
+Local git archive was generated with core.autocrlf=false to match Linux runner
+bytes; default Windows archiving otherwise converts LF text to CRLF.
+
 Version metadata and CLI help now report 0.12.0-alpha. All 129 tests, npm run
 check, and offline demo passed after this change. Lockfile/root version consistency
 and the release ZIP's installer files and clean first-run defaults are checked

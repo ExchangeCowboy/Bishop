@@ -12,6 +12,13 @@ file is pushed to main or when manually dispatched, leaving existing releases
 untouched. Publication must be verified through the resulting release/run status.
 Release notes are in [RELEASE_NOTES.md](../../RELEASE_NOTES.md).
 
+Bishop 0.12 alpha was published as a prerelease on October 14, 2026:
+[release and downloads](https://github.com/ExchangeCowboy/Bishop/releases/tag/v0.12.0-alpha).
+The tag points to ca9f5f05a32add9aac1c526c62c7ccdb815bafe2. The release job
+completed successfully, with the Windows ZIP and checksum uploaded. Downloaded
+ZIP checksum and all 80 file contents were verified against the tag. Local state
+is excluded and heading-only soul/memory plus first_run=true remain in the package.
+
 GitHub upload preparation targets the owner's existing public repository,
 https://github.com/ExchangeCowboy/Bishop. The local codex/publish-bishop branch
 starts from its existing main history. The owner's README, installation guide,
