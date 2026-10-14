@@ -7,12 +7,14 @@ Updated October 14, 2026. Tim Williams built this.
 The requested 0.12 alpha release uses package version 0.12.0-alpha and tag
 v0.12.0-alpha. .github/workflows/release.yml packages committed files only, checks
 the installer and clean defaults, produces a SHA-256 checksum, and publishes a
-prerelease using the repository-scoped Actions token. It runs when its workflow
-file is pushed to main or when manually dispatched, leaving existing releases
-untouched. Publication must be verified through the resulting release/run status.
+normal release marked Latest using the repository-scoped Actions token. It runs
+when its workflow file is pushed to main or when manually dispatched. Existing
+releases are promoted to normal/Latest without replacing their tag or assets.
+Publication must be verified through the resulting release/run status.
 Release notes are in [RELEASE_NOTES.md](../../RELEASE_NOTES.md).
 
-Bishop 0.12 alpha was published as a prerelease on October 14, 2026:
+Bishop 0.12 alpha was initially published as a prerelease on October 14, 2026.
+The owner subsequently requested normal release visibility and Latest:
 [release and downloads](https://github.com/ExchangeCowboy/Bishop/releases/tag/v0.12.0-alpha).
 The tag points to ca9f5f05a32add9aac1c526c62c7ccdb815bafe2. The release job
 completed successfully, with the Windows ZIP and checksum uploaded. Downloaded
